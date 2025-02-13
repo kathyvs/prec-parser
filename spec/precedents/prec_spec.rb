@@ -1,9 +1,7 @@
-RSpec.describe Parse do
+RSpec.describe Precedents do
   it "has a version number" do
-    expect(Parse::VERSION).not_to be nil
+    expect(Precedents::VERSION).not_to be nil
   end
 
-  it "reads from the stdio if no filename" do
-    expect(false).to eq(true)
-  end
+  it "has the subcommand parse"
 end

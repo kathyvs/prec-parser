@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "parse/version"
+require "precedents/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "prec-tools"
-  spec.version       = Parse::VERSION
+  spec.version       = Precedents::VERSION
   spec.authors       = ["Elsbeth Anne Roth (Kathy Van Stone)"]
   spec.email         = ["elsbeth@pobox.com"]
 

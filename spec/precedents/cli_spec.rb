@@ -1,7 +1,7 @@
 require 'rspec'
-require 'parse/cli'
+require 'precedents/cli'
 
-RSpec.describe Parse::CLI do
+RSpec.describe Precedents::CLI do
 
   class TestCLI < Parse::CLI
     def parse

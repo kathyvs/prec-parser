@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "parse/prec"
+require "precedents"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
