@@ -1,8 +1,7 @@
-require "parse/prec/version"
+require "parse/version"
 
 module Parse
-  module Prec
-    class Error < StandardError; end
+  class Error < StandardError; end
     # Your code goes here...
-  end
+
 end

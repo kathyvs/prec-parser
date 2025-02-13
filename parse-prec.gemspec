@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "parse/prec/version"
+require "parse/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "parse-loars"
-  spec.version       = Parse::Prec::VERSION
-  spec.authors       = ["Kathy Van Stone"]
+  spec.name          = "prec-tools"
+  spec.version       = Parse::VERSION
+  spec.authors       = ["Elsbeth Anne Roth (Kathy Van Stone)"]
   spec.email         = ["elsbeth@pobox.com"]
 
-  spec.summary       = %q{Parses LoARs for entry into the precedent database.}
-  spec.description   = %q{Takes a collection or single copy of an LOAR in xml format and extracts the data needed for the precedents database. Creates a JSON file.}
+  spec.summary       = %q{Tools to help manage the LoAR precedent website.}
+  spec.description   = %q{Parse: Takes a collection or single copy of an LOAR in xml format and extracts the data needed for the precedents database. Creates a JSON file.}
   spec.homepage      = "https://github.com/kathyvs/prec-parser"
   spec.license       = "MIT"
 
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = spec.homepage
-    spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+    spec.metadata["changelog_uri"] = "https://github.com/kathyvs/prec-parser/blob/main/CHANGELOG.md"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -36,7 +36,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.17"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "cucumber"
+  spec.add_development_dependency "aruba"
+  spec.add_development_dependency "thor"
 end
