@@ -1,6 +1,6 @@
-require "parse/version"
+require "precedents/version"
 
-module Parse
+module Precedents
   class Error < StandardError; end
     # Your code goes here...
 
